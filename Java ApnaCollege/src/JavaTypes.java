@@ -21,19 +21,35 @@ public class JavaTypes {
 
         /*
         Non-primitive or reference types:
-        1. String (two ways)
+        1. String (two ways) and it's immutable in Java
          */
         String name = "Ovinno";
         String friend = new String("Laila");
         System.out.println("Name length: " + name.length());
 
-        /*
-        String Operations:
-        1. Concatenate
-         */
+        // String Operations:
+
+        // 1. Concatenate
         String name1 = "Ovinno";
         String name2 = "Laila";
-        String love = name1 + name2;
+        String love = name1 + " and " + name2;
         System.out.println(love);
+
+        // 2. charAt
+        String MyName = "Ovinno";
+        System.out.println(MyName.charAt(0));
+        System.out.println(MyName.charAt(1));
+
+        // 3. length
+        System.out.println(MyName.length());
+
+        // 4. replace
+        String ModifiedMyName = MyName.replace('v', 'k');
+        System.out.println(ModifiedMyName);
+        System.out.println(MyName);
+
+        // 5. substring
+        String loveAgain = "Ovinno" + " and " + "Laila";
+        System.out.println(love.substring(7, 10));
     }
 }
